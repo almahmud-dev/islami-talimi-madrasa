@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Kalpurush - Bangla font. Kalpurush Google Fonts e nai, tai local file use kora hocche.
+   Tumi Kalpurush.ttf file ta /public/fonts/ folder e rekho. */
+@font-face {
+  font-family: "Kalpurush";
+  src: url("/fonts/Kalpurush.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --font-kalpurush: "Kalpurush", sans-serif;
+  --color-brand-green: #0e7a3e;
+  --color-brand-green-dark: #0a5c2e;
+  --color-brand-red: #b91c1c;
+  --color-brand-gold: #d4a017;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-kalpurush);
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
