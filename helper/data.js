@@ -328,6 +328,74 @@ export const galleryImages = [
   { id: "gallery-9", src: "https://www.risingbd.com/media/imgAll/2023November/Madrasah-2311240803.jpg", alt: "শ্রেণিকক্ষের পাঠদান" },
 ];
 
+// মাদ্রাসার বিনামূল্যের কোর্সসমূহ
+export const freeCourses = [
+  {
+    id: "free-course-1",
+    badge: "ফ্রি কোর্স",
+    title: "কুরআনে ব্যবহৃত ১০,০০০ শব্দের সহজ শব্দভান্ডার",
+    subtitle: "সহজ বাংলায় কুরআনের গুরুত্বপূর্ণ শব্দের অর্থ ও ব্যবহার শিখুন।",
+    image: "/images/courses/course1.png",
+    href: "/courses/quran-vocabulary",
+  },
+  {
+    id: "free-course-2",
+    badge: "ফ্রি কোর্স",
+    title: "নূরানি কায়দা ও শুদ্ধ কুরআন পড়া",
+    subtitle: "আরবি হরফ, মাখরাজ ও প্রাথমিক কুরআন শিক্ষার পূর্ণাঙ্গ অনুশীলন।",
+    image: "/images/courses/course3.png",
+    href: "/courses/noorani-qaida",
+  },
+  {
+    id: "free-course-3",
+    badge: "জনপ্রিয়",
+    title: "তাজবিদসহ কুরআন তিলাওয়াত শিক্ষা",
+    subtitle: "সঠিক উচ্চারণ ও তাজবিদের নিয়মে সুন্দরভাবে কুরআন পড়ুন।",
+    image: "/images/courses/course5.png",
+    href: "/courses/tajweed",
+  },
+  {
+    id: "free-course-4",
+    badge: "ফ্রি কোর্স",
+    title: "মৌলিক আরবি ভাষা শিক্ষা",
+    subtitle: "কুরআন বোঝার জন্য প্রয়োজনীয় আরবি শব্দ ও বাক্য গঠন শিখুন।",
+    image: "/images/courses/course6.png",
+    href: "/courses/arbi-vasha",
+  },
+  {
+    id: "free-course-5",
+    badge: "নতুন",
+    title: "হাদিস শরীফের মৌলিক শিক্ষা",
+    subtitle: "নির্বাচিত হাদিসের শিক্ষা, ব্যাখ্যা ও দৈনন্দিন জীবনে প্রয়োগ।",
+    image: "/images/courses/course2.png",
+    href: "/courses/hadith",
+  },
+  {
+    id: "free-course-6",
+    badge: "ফ্রি কোর্স",
+    title: "ইসলামিক আকীদা ও ফিকহ শিক্ষা",
+    subtitle: "ইসলামের মৌলিক বিশ্বাস ও প্রয়োজনীয় মাসআলা সহজভাবে জানুন।",
+    image: "/images/courses/course7.png",
+    href: "/courses/fiqh",
+  },
+  {
+    id: "free-course-7",
+    badge: "ফ্রি কোর্স",
+    title: "দৈনন্দিন দোয়া ও মাসনুন আমল",
+    subtitle: "প্রতিদিনের জীবনের গুরুত্বপূর্ণ দোয়া ও সুন্নাহ আমল শিখুন।",
+    image: "/images/courses/course4.png",
+    href: "/courses/daily-dua",
+  },
+  {
+    id: "free-course-8",
+    badge: "জনপ্রিয়",
+    title: "সীরাতুন্নবী ﷺ পরিচিতি কোর্স",
+    subtitle: "রাসুলুল্লাহ ﷺ-এর জীবন, আদর্শ ও সুন্দর চরিত্র সম্পর্কে জানুন।",
+    image: "/images/courses/course8.png",
+    href: "/courses/seerat",
+  },
+];
+
 // ফুটার - লিংক ও তথ্য
 export const footerLinks = {
   quickLinks: [
