@@ -273,34 +273,59 @@ export const testimonials = [
 export const videoReports = [
   {
     id: "video-1",
-    title: "ভর্তি ও শিক্ষা কার্যক্রম",
-    thumbnail: "https://placehold.co/400x230/1f2937/ffffff?text=Admission",
-    videoUrl: "https://www.youtube.com/watch?v=example1",
+    title: "কুরআন শিক্ষা — প্রথম পাঠ",
+    thumbnail: "https://i.ytimg.com/vi/91FRGeDxjlE/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=91FRGeDxjlE",
+    embedUrl: "https://www.youtube.com/embed/91FRGeDxjlE",
   },
   {
     id: "video-2",
-    title: "পরিদর্শনমূলক কার্যক্রম",
-    thumbnail: "https://placehold.co/400x230/1f2937/ffffff?text=Visit",
-    videoUrl: "https://www.youtube.com/watch?v=example2",
+    title: "কুরআন পড়া শিক্ষা ক্লাস — ১",
+    thumbnail: "https://i.ytimg.com/vi/8M561iwEEtA/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=8M561iwEEtA",
+    embedUrl: "https://www.youtube.com/embed/8M561iwEEtA",
   },
   {
     id: "video-3",
-    title: "সাংস্কৃতিক অনুষ্ঠান",
-    thumbnail: "https://placehold.co/400x230/1f2937/ffffff?text=Cultural",
-    videoUrl: "https://www.youtube.com/watch?v=example3",
+    title: "নূরানি কায়দা — আরবি হরফ শিক্ষা",
+    thumbnail: "https://i.ytimg.com/vi/xf6_iZeTO5o/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=xf6_iZeTO5o",
+    embedUrl: "https://www.youtube.com/embed/xf6_iZeTO5o",
+  },
+  {
+    id: "video-4",
+    title: "নূরানি কায়দা — কুরআন শিক্ষা কোর্স",
+    thumbnail: "https://i.ytimg.com/vi/Hf7JfUlKtDo/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=Hf7JfUlKtDo",
+    embedUrl: "https://www.youtube.com/embed/Hf7JfUlKtDo",
+  },
+  {
+    id: "video-5",
+    title: "তাজবিদ ও মাখরাজসহ কুরআন শিক্ষা",
+    thumbnail: "https://i.ytimg.com/vi/Wsv5rNkFgic/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=Wsv5rNkFgic",
+    embedUrl: "https://www.youtube.com/embed/Wsv5rNkFgic",
+  },
+  {
+    id: "video-6",
+    title: "সহজে তাজবিদ ও মাখরাজ শিখুন",
+    thumbnail: "https://i.ytimg.com/vi/LHoGB3-hmIU/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=LHoGB3-hmIU",
+    embedUrl: "https://www.youtube.com/embed/LHoGB3-hmIU",
   },
 ];
 
 // গ্যালারী - ছবি গ্রিড
 export const galleryImages = [
-  { id: "gallery-1", src: "https://placehold.co/300x300/166534/ffffff?text=Gallery+1", alt: "কম্পিউটার ল্যাব" },
-  { id: "gallery-2", src: "https://placehold.co/300x300/1e3a8a/ffffff?text=Gallery+2", alt: "সমাবেশ" },
-  { id: "gallery-3", src: "https://placehold.co/300x300/78350f/ffffff?text=Gallery+3", alt: "ছাত্রছাত্রী" },
-  { id: "gallery-4", src: "https://placehold.co/300x300/6d28d9/ffffff?text=Gallery+4", alt: "শিক্ষা কার্যক্রম" },
-  { id: "gallery-5", src: "https://placehold.co/300x300/9d174d/ffffff?text=Gallery+5", alt: "মাদ্রাসা প্রাঙ্গণ" },
-  { id: "gallery-6", src: "https://placehold.co/300x300/065f46/ffffff?text=Gallery+6", alt: "শিক্ষক ও শিক্ষার্থী" },
-  { id: "gallery-7", src: "https://placehold.co/300x300/b45309/ffffff?text=Gallery+7", alt: "অনুষ্ঠান" },
-  { id: "gallery-8", src: "https://placehold.co/300x300/374151/ffffff?text=Gallery+8", alt: "মাদ্রাসা ভবন" },
+  { id: "gallery-1", src: "https://www.islamicmissionschool.com/wp-content/uploads/2023/11/IMG_20200203_123239.jpg", alt: "কম্পিউটার ল্যাব" },
+  { id: "gallery-2", src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=85", alt: "সমাবেশ" },
+  { id: "gallery-3", src: "https://asset.news24bd.tv/public/news_images/2023/02/01/1675221504-018e2ac109c69e0fad5247c608fa9ac3.jpg", alt: "ছাত্রছাত্রী" },
+  { id: "gallery-4", src: "https://dntakhsisimadrasah.com/backend_assets/gallery_image/1733573594.jpg", alt: "শিক্ষা কার্যক্রম" },
+  { id: "gallery-5", src: "https://www.risingbd.com/media/imgAll/2025October/madrasa-2510161243.jpg", alt: "মাদ্রাসা প্রাঙ্গণ" },
+  { id: "gallery-6", src: "https://ecdn.dhakatribune.net/contents/cache/images/1200x630x1xxxxx1x694528/uploads/dten/2017/07/madrasa.jpg", alt: "শিক্ষক ও শিক্ষার্থী" },
+  { id: "gallery-7", src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=85", alt: "অনুষ্ঠান" },
+  { id: "gallery-8", src: "https://cdn.moumachi.com.bd/listings/2019-04/11250/images/original/202311-7511_darunnazat-siddikia-kamil-madrasah-classroom.png", alt: "মাদ্রাসা ভবন" },
+  { id: "gallery-9", src: "https://www.risingbd.com/media/imgAll/2023November/Madrasah-2311240803.jpg", alt: "শ্রেণিকক্ষের পাঠদান" },
 ];
 
 // ফুটার - লিংক ও তথ্য

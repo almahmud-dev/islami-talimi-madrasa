@@ -6,10 +6,13 @@ export const metadata = {
     "ইশলাহুত তালিম ক্যাডেট মাদ্রাসা - আখিরাতের সফলতার কুরআনি যাত্রা এখানেই শুরু হোক।",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
   return (
     <html lang="bn">
-      <body>{children}</body>
+      <body>
+        {children}
+        {modal}
+      </body>
     </html>
   );
 }
