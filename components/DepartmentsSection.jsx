@@ -1,43 +1,207 @@
-import Link from "next/link";
+// DepartmentsSection.jsx
+import Image from "next/image";
+import {
+  FaSchool,
+  FaBookOpen,
+  FaMosque,
+  FaBook,
+  FaChair,
+  FaClock,
+  FaArrowRight,
+} from "react-icons/fa";
 import Container from "./ui/Container";
-import { FaMosque } from "react-icons/fa";
-import { departments } from "@/helper/data";
 
-const colorMap = {
-  green: "bg-brand-green",
-  orange: "bg-orange-500",
-  blue: "bg-blue-600",
-};
+const departments = [
+  {
+    id: 1,
+    title: "ইসলামী কিন্ডারগার্টেন",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department1.png",
+    active: false,
+  },
+  {
+    id: 2,
+    title: "নাজেরা বিভাগ",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department2.png",
+    active: true,
+  },
+  {
+    id: 3,
+    title: "হিফজুল কোরআন বিভাগ",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department3.png",
+    active: false,
+  },
+  {
+    id: 4,
+    title: "কিতাব বিভাগ",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department4.png",
+    active: false,
+  },
+  {
+    id: 5,
+    title: "ইসলামী কিন্ডারগার্টেন",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department1.png",
+    active: false,
+  },
+  {
+    id: 6,
+    title: "নাজেরা বিভাগ",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department6.png",
+    active: false,
+  },
+  {
+    id: 7,
+    title: "হিফজুল কোরআন বিভাগ",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department3.png",
+    active: false,
+  },
+  {
+    id: 8,
+    title: "কিতাব বিভাগ",
+    subtitle: "ক্লাস শুরু ১লা জানুয়ারি ২০২৫ থেকে",
+    seats: "৫৬ সিট খালি আছে",
+    daysLeft: "২৩ দিন বাকি",
+    image: "/images/department/department4.png",
+    active: false,
+  },
+];
 
 export default function DepartmentsSection() {
   return (
-    <section className="bg-gray-50 py-14 sm:py-20">
+    <section className="py-16 bg-white">
       <Container>
-        <h2 className="text-center text-2xl font-bold text-gray-900 sm:text-3xl">
-          আমাদের শাখা ও বিভাগসমূহ
-        </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-gray-600">
-          আমাদের মাদ্রাসায় শিক্ষার্থীদের দ্বীনি ও দুনিয়াবি শিক্ষায় দক্ষ করে
-          তুলতে বিভিন্ন বিভাগে বিভক্ত পাঠদান পরিচালিত হয়।
-        </p>
+        {/* =========================
+            Section Heading
+        ========================== */}
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="relative inline-block text-2xl md:text-3xl font-bold text-gray-800">
+            আমাদের শাখা ও বিভাগসমূহ
 
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {departments.map((dept) => (
-            <div
-              key={dept.id}
-              className={`flex flex-col items-start gap-3 rounded-xl p-6 text-white ${colorMap[dept.color]}`}
-            >
-              <FaMosque size={26} />
-              <h3 className="text-base font-bold">{dept.title}</h3>
-              <p className="text-xs text-white/90">{dept.subtitle}</p>
-              <Link
-                href={dept.href}
-                className="mt-2 rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-gray-800 hover:bg-white/90"
+            <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-24 h-1 bg-emerald-500 rounded-full" />
+          </h2>
+
+          <p className="mt-6 text-sm md:text-[17px] text-black font-medium leading-6">
+            আমাদের মাদ্রাসা শিক্ষার্থীদের ইসলামী শিক্ষা ও নৈতিক মূল্যবোধ
+            বিকাশের জন্য বিভিন্ন শাখা ও বিভাগ প্রতিষ্ঠা করেছে। প্রতিটি বিভাগ
+            বিশেষভাবে পরিকল্পিত, যাতে শিক্ষার্থীরা তাদের পছন্দের ক্ষেত্রে
+            গভীর জ্ঞান অর্জন করতে পারে।
+          </p>
+        </div>
+
+        {/* =========================
+            Department Cards
+        ========================== */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {departments.map((dept) => {
+            const Icon = dept.icon;
+
+            return (
+              <div
+                key={dept.id}
+                className="group rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden bg-white"
               >
-                বিস্তারিত দেখুন
-              </Link>
-            </div>
-          ))}
+                {/* =========================
+                    Department Image
+                ========================== */}
+                <div className="relative h-40 overflow-hidden">
+                  <Image
+                    src={dept.image}
+                    alt={dept.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+
+                  
+
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-black/10" />
+                  
+                </div>
+
+                {/* =========================
+                    Title Strip
+                ========================== */}
+                
+
+                {/* =========================
+                    Card Body
+                ========================== */}
+                <div className="p-4">
+                  {/* Seats & Days Left */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 mb-4 gap-2">
+                    <span className="flex items-center gap-1 bg-gray-50 border border-gray-100 rounded-md px-2 py-1">
+                      <FaChair className="text-gray-400 shrink-0" />
+                      {dept.seats}
+                    </span>
+
+                    <span className="flex items-center gap-1 bg-gray-50 border border-gray-100 rounded-md px-2 py-1">
+                      <FaClock className="text-gray-400 shrink-0" />
+                      {dept.daysLeft}
+                    </span>
+                  </div>
+
+                  {/* Department Title */}
+                  <h4 className="font-semibold text-gray-800 mb-1">
+                    {dept.title}
+                  </h4>
+
+                  {/* Subtitle */}
+                  <p className="text-sm text-gray-500 mb-4">
+                    {dept.subtitle}
+                  </p>
+
+                  {/* Details Button */}
+                  <button
+                    type="button"
+                    className={`w-full flex items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-medium transition-all duration-200 ${
+                      dept.active
+                        ? "bg-emerald-500 text-white hover:bg-emerald-600"
+                        : "bg-gray-50 text-gray-700 border border-gray-200 hover:bg-gray-100"
+                    }`}
+                  >
+                    বিস্তারিত দেখি
+
+                    <FaArrowRight className="text-xs transition-transform duration-200 group-hover:translate-x-1" />
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* =========================
+            View More Button
+        ========================== */}
+        <div className="flex justify-center mt-10">
+          <button
+            type="button"
+            className="flex items-center gap-2 border border-gray-300 rounded-lg px-6 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition-all duration-200"
+          >
+            আরো দেখুন
+
+            <FaArrowRight className="text-xs transition-transform duration-200" />
+          </button>
         </div>
       </Container>
     </section>
