@@ -43,7 +43,6 @@ const courses = [
     duration: "১০ দিন বাকি",
     description:
       "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
-    highlight: true,
   },
   {
     id: 3,
@@ -205,17 +204,17 @@ const CourseSection = () => {
 
               {/* Course Meta */}
               <div className="flex items-center justify-between gap-2 border-b border-gray-100 px-1.5 py-2">
-                <span className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1.5 text-xs text-gray-600">
+                <span className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1.5 text-xs text-black">
                   <FaLayerGroup size={12} />
                   {course.batch}
                 </span>
 
-                <span className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1.5 text-xs text-gray-600">
+                <span className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1.5 text-xs text-black">
                   <FaUserFriends size={12} />
                   {course.seat}
                 </span>
 
-                <span className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1.5 text-xs text-gray-600">
+                <span className="flex items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2.5 py-1.5 text-xs text-black">
                   <FaRegClock size={12} />
                   {course.duration}
                 </span>
@@ -227,16 +226,12 @@ const CourseSection = () => {
                   {course.description}
                 </h3>
 
-                <button
+                 <button
                   type="button"
-                  className={`flex items-center justify-center gap-2 rounded-lg border py-2.5 text-sm font-semibold transition-all duration-200 ${
-                    course.highlight
-                      ? "border-emerald-500 bg-emerald-500 text-white hover:bg-emerald-600 cursor-pointer"
-                      : "border-gray-200 bg-gray-100 text-gray-700 hover:border-emerald-500 hover:bg-emerald-500 hover:text-white cursor-pointer"
-                  }`}
+                  className="w-full flex items-center justify-center gap-2 rounded-lg py-2.5 text-[16px] font-medium text-gray-700 bg-gray-200 border border-gray-200 transition-all duration-300 hover:bg-emerald-500 hover:border-emerald-500 hover:text-white"
                 >
                   বিস্তারিত দেখি
-                  <FaArrowRight size={12} className="text-xs transition-transform duration-300 group-hover:translate-x-1"/>
+                  <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
                 </button>
               </div>
             </article>

@@ -134,7 +134,7 @@ export default function DepartmentsSection() {
                 {/* Details Button */}
                 <button
                   type="button"
-                  className="w-full flex items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-200 transition-all duration-300 hover:bg-emerald-500 hover:border-emerald-500 hover:text-white"
+                  className="w-full flex items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-medium text-gray-700 bg-gray-200 border border-gray-200 transition-all duration-300 hover:bg-emerald-500 hover:border-emerald-500 hover:text-white"
                 >
                   বিস্তারিত দেখি
                   <FaArrowRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
