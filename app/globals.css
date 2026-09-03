@@ -11,6 +11,8 @@
 }
 
 @theme inline {
+
+  --breakpoint-xs:359px;
   --font-kalpurush: "Kalpurush", sans-serif;
   --color-brand-green: #0e7a3e;
   --color-brand-green-dark: #0a5c2e;
