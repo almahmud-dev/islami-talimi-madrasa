@@ -14,11 +14,14 @@ const FreeCourseSection = () => {
     <section className="py-14">
       <Container>
         {/* Section Title */}
-        <h2 className="mb-10 flex items-center justify-center gap-2 text-center text-2xl font-bold text-gray-800 md:text-3xl">
-          আমাদের ফ্রি কোর্সসমূহ
-          <FaGift className="text-brand-green" />
-        </h2>
 
+        <div className="mb-10">
+          <h2 className="  flex items-center justify-center gap-2 text-center text-2xl font-bold text-gray-800 md:text-3xl">
+            আমাদের ফ্রি কোর্সসমূহ
+            <FaGift className="text-brand-green" />
+          </h2>
+          <div className="mx-auto mt-3 h-[3.5px] w-[120px] rounded-full bg-[#00bc7d]" />
+        </div>
         <Swiper
           className="!px-1 !pb-2"
           modules={[Autoplay]}

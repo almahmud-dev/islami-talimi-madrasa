@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children, modal }) {
   return (
     <html lang="bn">
-      <body>
+      <body suppressHydrationWarning>
         {children}
         {modal}
       </body>
