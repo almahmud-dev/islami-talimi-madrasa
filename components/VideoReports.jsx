@@ -16,6 +16,7 @@ export default function VideoReports() {
         <h2 className="text-center text-2xl font-bold text-gray-900 sm:text-3xl">
           প্রতিবেদন
         </h2>
+        <div className="mx-auto mt-3 h-[3.5px] w-[120px] rounded-full bg-[#00bc7d]" />
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visibleVideos.map((video) => (

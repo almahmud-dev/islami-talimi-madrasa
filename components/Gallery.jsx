@@ -11,7 +11,7 @@ export default function Gallery() {
           <h2 className="text-center text-2xl font-bold text-gray-900 sm:text-3xl">
             গ্যালারী
           </h2>
-          <span className="mt-2 h-0.5 w-14 rounded-full bg-brand-green" />
+          <div className="mx-auto mt-3 h-[3.5px] w-[120px] rounded-full bg-[#00bc7d]" />
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 md:auto-rows-[135px]">
