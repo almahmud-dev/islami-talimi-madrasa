@@ -190,7 +190,7 @@ const CourseSection = () => {
           {visibleCourses.map((course) => (
             <article
               key={course.id}
-              className="group flex h-full flex-col overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:border-gray-900 hover:shadow-lg"
+              className="group flex h-full flex-col overflow-hidden rounded-xl border-2 border-gray-100 bg-white shadow-sm transition-all duration-300 hover:border-gray-900 hover:shadow-lg"
             >
               {/* Course Image */}
               <div className="relative h-40 w-full overflow-hidden">
@@ -236,7 +236,7 @@ const CourseSection = () => {
                   }`}
                 >
                   বিস্তারিত দেখি
-                  <FaArrowRight size={12} />
+                  <FaArrowRight size={12} className="text-xs transition-transform duration-300 group-hover:translate-x-1"/>
                 </button>
               </div>
             </article>

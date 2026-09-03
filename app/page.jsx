@@ -25,7 +25,6 @@ export default function HomePage() {
         <VideoReports />
         <Gallery />
         <FreeCourseSection/>
-        <CoursesSection title="ফ্রি কোর্সসমূহ" courses={courses.slice(0, 4)} />
       </main>
       <Footer />
     </>
