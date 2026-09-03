@@ -187,19 +187,85 @@ export const testimonials = [
     id: "testimonial-1",
     quote:
       "আমার সন্তান এই মাদ্রাসায় ভর্তি হওয়ার পর থেকে দ্বীনি ও দুনিয়াবি উভয় শিক্ষায় দারুণ উন্নতি করেছে। শিক্ষকদের আন্তরিকতা প্রশংসনীয়।",
-    name: "অভিভাবক - রহমান সাহেব",
+    name: "মো. আব্দুর রহমান",
+    relation: "অভিভাবক",
   },
   {
     id: "testimonial-2",
     quote:
       "এখানকার পরিবেশ খুবই শৃঙ্খলাবদ্ধ এবং শিক্ষকরা প্রতিটি শিক্ষার্থীর প্রতি আলাদাভাবে যত্নশীল, যা আমাকে মুগ্ধ করেছে।",
-    name: "অভিভাবক - করিম সাহেব",
+    name: "মোছা. রোকসানা আক্তার",
+    relation: "অভিভাবক",
   },
   {
     id: "testimonial-3",
     quote:
       "হিফজ বিভাগে পড়াশোনা করে আমি অনেক কিছু শিখেছি। এই মাদ্রাসার শিক্ষা পদ্ধতি সত্যিই যুগোপযোগী ও কার্যকর।",
-    name: "শিক্ষার্থী - ইউসুফ",
+    name: "মো. আব্দুল্লাহ",
+    relation: "শিক্ষার্থী",
+  },
+  {
+    id: "testimonial-4",
+    quote:
+      "নূরানি বিভাগে আমার মেয়ের কুরআন পড়ার ভয় কেটে গেছে। এখন সে নিয়মিত নামাজ পড়ে এবং আগ্রহ নিয়ে পড়াশোনা করে।",
+    name: "সুমাইয়া ইসলাম",
+    relation: "অভিভাবক",
+  },
+  {
+    id: "testimonial-5",
+    quote:
+      "শিক্ষকদের নিয়মিত পরামর্শ ও অভিভাবকদের সঙ্গে যোগাযোগের কারণে সন্তানের পড়াশোনার অগ্রগতি সহজেই বুঝতে পারি।",
+    name: "মো. সাইফুল ইসলাম",
+    relation: "অভিভাবক",
+  },
+  {
+    id: "testimonial-6",
+    quote:
+      "আরবি ভাষার মৌলিক বিষয়গুলো খুব সহজভাবে শেখানো হয়। অল্প সময়েই কুরআনের অনেক শব্দের অর্থ বুঝতে পারছি।",
+    name: "মো. মাহমুদুল হাসান",
+    relation: "শিক্ষার্থী",
+  },
+  {
+    id: "testimonial-7",
+    quote:
+      "মাদ্রাসার পরিচ্ছন্ন পরিবেশ ও সুন্দর শৃঙ্খলা আমাদের পরিবারের কাছে খুব ভালো লেগেছে। সন্তানের জন্য এটি নিরাপদ একটি জায়গা।",
+    name: "ফারজানা ইয়াসমিন",
+    relation: "অভিভাবক",
+  },
+  {
+    id: "testimonial-8",
+    quote:
+      "এখানে দ্বীনি শিক্ষার পাশাপাশি কম্পিউটার ও সাধারণ জ্ঞান শেখানো হয়। ভবিষ্যতের জন্য এই সমন্বিত শিক্ষা খুবই উপকারী।",
+    name: "মো. নাজমুল হক",
+    relation: "অভিভাবক",
+  },
+  {
+    id: "testimonial-9",
+    quote:
+      "শিক্ষকরা ভুল ধরিয়ে দেওয়ার সময়ও খুব আন্তরিক থাকেন। ফলে পড়াশোনায় আগ্রহ বেড়েছে এবং আত্মবিশ্বাসও তৈরি হয়েছে।",
+    name: "আয়েশা সিদ্দিকা",
+    relation: "শিক্ষার্থী",
+  },
+  {
+    id: "testimonial-10",
+    quote:
+      "আমার ছেলে আগে নিয়মিত পড়তে চাইত না। মাদ্রাসার সুন্দর পরিবেশ ও শিক্ষকদের উৎসাহে এখন সে প্রতিদিনের পড়া নিজে থেকে করে।",
+    name: "মো. কামরুল হাসান",
+    relation: "অভিভাবক",
+  },
+  {
+    id: "testimonial-11",
+    quote:
+      "তাজবিদের নিয়মগুলো হাতে-কলমে শেখানোর ফলে আমার তিলাওয়াত অনেক শুদ্ধ হয়েছে। ক্লাসগুলো খুব গোছানো ও সময়োপযোগী।",
+    name: "মো. রিয়াজুল ইসলাম",
+    relation: "শিক্ষার্থী",
+  },
+  {
+    id: "testimonial-12",
+    quote:
+      "সন্তানের আচরণে ইতিবাচক পরিবর্তন দেখছি। সে এখন বড়দের সম্মান করে, সময় মেনে চলে এবং ভালো কাজের প্রতি আগ্রহী হয়েছে।",
+    name: "নাসরিন আক্তার",
+    relation: "অভিভাবক",
   },
 ];
 
@@ -207,34 +273,127 @@ export const testimonials = [
 export const videoReports = [
   {
     id: "video-1",
-    title: "ভর্তি ও শিক্ষা কার্যক্রম",
-    thumbnail: "https://placehold.co/400x230/1f2937/ffffff?text=Admission",
-    videoUrl: "https://www.youtube.com/watch?v=example1",
+    title: "কুরআন শিক্ষা — প্রথম পাঠ",
+    thumbnail: "https://i.ytimg.com/vi/91FRGeDxjlE/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=91FRGeDxjlE",
+    embedUrl: "https://www.youtube.com/embed/91FRGeDxjlE",
   },
   {
     id: "video-2",
-    title: "পরিদর্শনমূলক কার্যক্রম",
-    thumbnail: "https://placehold.co/400x230/1f2937/ffffff?text=Visit",
-    videoUrl: "https://www.youtube.com/watch?v=example2",
+    title: "কুরআন পড়া শিক্ষা ক্লাস — ১",
+    thumbnail: "https://i.ytimg.com/vi/8M561iwEEtA/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=8M561iwEEtA",
+    embedUrl: "https://www.youtube.com/embed/8M561iwEEtA",
   },
   {
     id: "video-3",
-    title: "সাংস্কৃতিক অনুষ্ঠান",
-    thumbnail: "https://placehold.co/400x230/1f2937/ffffff?text=Cultural",
-    videoUrl: "https://www.youtube.com/watch?v=example3",
+    title: "নূরানি কায়দা — আরবি হরফ শিক্ষা",
+    thumbnail: "https://i.ytimg.com/vi/xf6_iZeTO5o/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=xf6_iZeTO5o",
+    embedUrl: "https://www.youtube.com/embed/xf6_iZeTO5o",
+  },
+  {
+    id: "video-4",
+    title: "নূরানি কায়দা — কুরআন শিক্ষা কোর্স",
+    thumbnail: "https://i.ytimg.com/vi/Hf7JfUlKtDo/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=Hf7JfUlKtDo",
+    embedUrl: "https://www.youtube.com/embed/Hf7JfUlKtDo",
+  },
+  {
+    id: "video-5",
+    title: "তাজবিদ ও মাখরাজসহ কুরআন শিক্ষা",
+    thumbnail: "https://i.ytimg.com/vi/Wsv5rNkFgic/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=Wsv5rNkFgic",
+    embedUrl: "https://www.youtube.com/embed/Wsv5rNkFgic",
+  },
+  {
+    id: "video-6",
+    title: "সহজে তাজবিদ ও মাখরাজ শিখুন",
+    thumbnail: "https://i.ytimg.com/vi/LHoGB3-hmIU/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=LHoGB3-hmIU",
+    embedUrl: "https://www.youtube.com/embed/LHoGB3-hmIU",
   },
 ];
 
 // গ্যালারী - ছবি গ্রিড
 export const galleryImages = [
-  { id: "gallery-1", src: "https://placehold.co/300x300/166534/ffffff?text=Gallery+1", alt: "কম্পিউটার ল্যাব" },
-  { id: "gallery-2", src: "https://placehold.co/300x300/1e3a8a/ffffff?text=Gallery+2", alt: "সমাবেশ" },
-  { id: "gallery-3", src: "https://placehold.co/300x300/78350f/ffffff?text=Gallery+3", alt: "ছাত্রছাত্রী" },
-  { id: "gallery-4", src: "https://placehold.co/300x300/6d28d9/ffffff?text=Gallery+4", alt: "শিক্ষা কার্যক্রম" },
-  { id: "gallery-5", src: "https://placehold.co/300x300/9d174d/ffffff?text=Gallery+5", alt: "মাদ্রাসা প্রাঙ্গণ" },
-  { id: "gallery-6", src: "https://placehold.co/300x300/065f46/ffffff?text=Gallery+6", alt: "শিক্ষক ও শিক্ষার্থী" },
-  { id: "gallery-7", src: "https://placehold.co/300x300/b45309/ffffff?text=Gallery+7", alt: "অনুষ্ঠান" },
-  { id: "gallery-8", src: "https://placehold.co/300x300/374151/ffffff?text=Gallery+8", alt: "মাদ্রাসা ভবন" },
+  { id: "gallery-1", src: "https://www.islamicmissionschool.com/wp-content/uploads/2023/11/IMG_20200203_123239.jpg", alt: "কম্পিউটার ল্যাব" },
+  { id: "gallery-2", src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=85", alt: "সমাবেশ" },
+  { id: "gallery-3", src: "https://asset.news24bd.tv/public/news_images/2023/02/01/1675221504-018e2ac109c69e0fad5247c608fa9ac3.jpg", alt: "ছাত্রছাত্রী" },
+  { id: "gallery-4", src: "https://dntakhsisimadrasah.com/backend_assets/gallery_image/1733573594.jpg", alt: "শিক্ষা কার্যক্রম" },
+  { id: "gallery-5", src: "https://www.risingbd.com/media/imgAll/2025October/madrasa-2510161243.jpg", alt: "মাদ্রাসা প্রাঙ্গণ" },
+  { id: "gallery-6", src: "https://ecdn.dhakatribune.net/contents/cache/images/1200x630x1xxxxx1x694528/uploads/dten/2017/07/madrasa.jpg", alt: "শিক্ষক ও শিক্ষার্থী" },
+  { id: "gallery-7", src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=85", alt: "অনুষ্ঠান" },
+  { id: "gallery-8", src: "https://cdn.moumachi.com.bd/listings/2019-04/11250/images/original/202311-7511_darunnazat-siddikia-kamil-madrasah-classroom.png", alt: "মাদ্রাসা ভবন" },
+  { id: "gallery-9", src: "https://www.risingbd.com/media/imgAll/2023November/Madrasah-2311240803.jpg", alt: "শ্রেণিকক্ষের পাঠদান" },
+];
+
+// মাদ্রাসার বিনামূল্যের কোর্সসমূহ
+export const freeCourses = [
+  {
+    id: "free-course-1",
+    badge: "ফ্রি কোর্স",
+    title: "কুরআনে ব্যবহৃত ১০,০০০ শব্দের সহজ শব্দভান্ডার",
+    subtitle: "সহজ বাংলায় কুরআনের গুরুত্বপূর্ণ শব্দের অর্থ ও ব্যবহার শিখুন।",
+    image: "/images/courses/course1.png",
+    href: "/courses/quran-vocabulary",
+  },
+  {
+    id: "free-course-2",
+    badge: "ফ্রি কোর্স",
+    title: "নূরানি কায়দা ও শুদ্ধ কুরআন পড়া",
+    subtitle: "আরবি হরফ, মাখরাজ ও প্রাথমিক কুরআন শিক্ষার পূর্ণাঙ্গ অনুশীলন।",
+    image: "/images/courses/course3.png",
+    href: "/courses/noorani-qaida",
+  },
+  {
+    id: "free-course-3",
+    badge: "জনপ্রিয়",
+    title: "তাজবিদসহ কুরআন তিলাওয়াত শিক্ষা",
+    subtitle: "সঠিক উচ্চারণ ও তাজবিদের নিয়মে সুন্দরভাবে কুরআন পড়ুন।",
+    image: "/images/courses/course5.png",
+    href: "/courses/tajweed",
+  },
+  {
+    id: "free-course-4",
+    badge: "ফ্রি কোর্স",
+    title: "মৌলিক আরবি ভাষা শিক্ষা",
+    subtitle: "কুরআন বোঝার জন্য প্রয়োজনীয় আরবি শব্দ ও বাক্য গঠন শিখুন।",
+    image: "/images/courses/course6.png",
+    href: "/courses/arbi-vasha",
+  },
+  {
+    id: "free-course-5",
+    badge: "নতুন",
+    title: "হাদিস শরীফের মৌলিক শিক্ষা",
+    subtitle: "নির্বাচিত হাদিসের শিক্ষা, ব্যাখ্যা ও দৈনন্দিন জীবনে প্রয়োগ।",
+    image: "/images/courses/course2.png",
+    href: "/courses/hadith",
+  },
+  {
+    id: "free-course-6",
+    badge: "ফ্রি কোর্স",
+    title: "ইসলামিক আকীদা ও ফিকহ শিক্ষা",
+    subtitle: "ইসলামের মৌলিক বিশ্বাস ও প্রয়োজনীয় মাসআলা সহজভাবে জানুন।",
+    image: "/images/courses/course7.png",
+    href: "/courses/fiqh",
+  },
+  {
+    id: "free-course-7",
+    badge: "ফ্রি কোর্স",
+    title: "দৈনন্দিন দোয়া ও মাসনুন আমল",
+    subtitle: "প্রতিদিনের জীবনের গুরুত্বপূর্ণ দোয়া ও সুন্নাহ আমল শিখুন।",
+    image: "/images/courses/course4.png",
+    href: "/courses/daily-dua",
+  },
+  {
+    id: "free-course-8",
+    badge: "জনপ্রিয়",
+    title: "সীরাতুন্নবী ﷺ পরিচিতি কোর্স",
+    subtitle: "রাসুলুল্লাহ ﷺ-এর জীবন, আদর্শ ও সুন্দর চরিত্র সম্পর্কে জানুন।",
+    image: "/images/courses/course8.png",
+    href: "/courses/seerat",
+  },
 ];
 
 // ফুটার - লিংক ও তথ্য

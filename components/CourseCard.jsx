@@ -1,35 +1,34 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function CourseCard({ course }) {
   return (
-    <div className="overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md">
-      <div className="relative">
+    <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-green/40 hover:shadow-lg">
+      <div className="relative aspect-[400/220] overflow-hidden bg-gray-100">
         <Image
           src={course.image}
           alt={course.title}
-          width={400}
-          height={220}
-          className="h-40 w-full object-cover"
+          fill
+          sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-brand-green-dark">
-          {course.badge}
-        </span>
       </div>
-      <div className="p-4">
-        <h3 className="line-clamp-2 text-sm font-bold text-gray-900">
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <h3 className="line-clamp-2 min-h-12 text-base font-bold leading-relaxed text-gray-900">
           {course.title}
         </h3>
-        <p className="mt-1 line-clamp-2 text-xs text-gray-500">
+        <p className="mt-2 line-clamp-2 min-h-10 text-sm leading-relaxed text-gray-500">
           {course.subtitle}
         </p>
         <Link
           href={course.href}
-          className="mt-3 inline-block rounded-full bg-brand-green px-4 py-1.5 text-xs font-semibold text-white hover:bg-brand-green-dark"
+          className="mt-5 flex w-full items-center justify-center gap-2 rounded-md border border-gray-200 bg-gray-100 px-4 py-2.5 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-brand-green hover:bg-brand-green hover:text-white"
         >
-          বিস্তারিত দেখুন →
+          বিস্তারিত দেখি
+          <FaArrowRight size={12} className="transition-transform duration-300 group-hover:translate-x-0.5" />
         </Link>
       </div>
-    </div>
+    </article>
   );
 }

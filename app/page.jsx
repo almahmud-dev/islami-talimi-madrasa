@@ -9,6 +9,7 @@ import VideoReports from "@/components/VideoReports";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import { courses } from "@/helper/data";
+import FreeCourseSection from "@/components/FreeCourseSection";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Testimonials />
         <VideoReports />
         <Gallery />
+        <FreeCourseSection/>
         <CoursesSection title="ফ্রি কোর্সসমূহ" courses={courses.slice(0, 4)} />
       </main>
       <Footer />
