@@ -42,7 +42,6 @@ export default function Hero() {
           <div className="absolute inset-0 bg-[#8b1515]/85 mix-blend-multiply" />
         </div>
 
-        {/* Left dark area = just the section's own bg-[#1c1c1c], no layer needed */}
       </div>
 
       {/* Fallback for Mobile Screens */}
@@ -51,7 +50,7 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <Container className="relative z-40 py-16 sm:py-20 lg:py-28 w-full">
+      <Container className="relative z-40 py-16 sm:py-20  w-full">
         <div className="max-w-xl text-white">
           <p className="mb-3 text-sm sm:text-base font-medium text-gray-200">
             ইসলামিক শিক্ষার নতুন দিগন্তে আপনাকে স্বাগতম

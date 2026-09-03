@@ -6,32 +6,32 @@ import Image from "next/image";
 import { FiMenu, FiX, FiSearch } from "react-icons/fi";
 import Container from "./ui/Container";
 import { navLinks } from "@/helper/data";
-import logo from "@/public/images/placeholder-logo.png";
+import logo from "@/public/images/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [active, setActive] = useState(0);
   return (
     <header className="sticky top-0 z-50 border-b border-gray-100">
       {/* Top identity bar */}
-      <div className="bg-linear-to-br from-pink-200 via-white to-green-200 py-3">
+      <div className="bg-linear-to-br from-pink-200 via-white to-green-200 py-3 md:py-9">
         <Container>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex flex-row items-center justify-center gap-3 md:gap-8 ">
             <Image
               src={logo}
               alt="ইছলাহুত তালিম ক্যাডেট মাদ্রাসা লোগো"
-              width={64}
-              height={64}
-              className="shrink-0 rounded-full"
+              width={150}
+              height={150}
+              className=" w-16 xs:w-20 sm:w-27 md:w-37 aspect-square shrink-0 rounded-full object-cover"
             />
-            <div className="text-center">
-              <p className="text-xs font-medium text-red-800 sm:text-sm">
+            <div className="text-center flex flex-col items-center gap-1  md:gap-4">
+              <p className="text-[11px] font-semibold text-red-800 sm:text-xs md:text-sm lg:text-2xl">
                 إصلاح التعليم كاديت مدرسة إسلامية
               </p>
-              <h1 className="text-lg font-extrabold text-brand-green sm:text-2xl">
+              <h1 className="text-base font-extrabold text-brand-green sm:text-2xl md:text-3xl lg:text-4xl">
                 ইছলাহুত তালিম ক্যাডেট মাদ্রাসা
               </h1>
-              <p className="text-[10px] font-semibold tracking-wide  sm:text-xs">
+              <p className="text-[9px] font-semibold tracking-wider sm:text-xs md:text-sm lg:text-base">
                 ICHLAHUT TALIM CADET MADRASA BANGLADESH
               </p>
             </div>
@@ -42,14 +42,14 @@ export default function Navbar() {
       {/* Main nav row */}
       <div className="border-t border-gray-100 bg-white/95 backdrop-blur">
         <Container>
-          <div className="flex items-center justify-between gap-4 py-3">
+          <div className="flex items-center justify-center gap-10 py-3">
             {/* Desktop nav */}
-            <nav className="hidden items-center gap-6 lg:flex">
+            <nav className="hidden items-center  gap-6 lg:flex">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-gray-700 transition-colors hover:text-brand-green"
+                  className={`text-xl font-medium text-gray-700 transition-colors hover:text-brand-green `}
                 >
                   {link.label}
                 </Link>
@@ -57,8 +57,8 @@ export default function Navbar() {
             </nav>
 
             {/* Search + CTA */}
-            <div className="ml-auto hidden items-center gap-3 md:flex">
-              <div className="flex items-center rounded-full border border-gray-200 px-3 py-1.5">
+            <div className=" hidden items-center  gap-3 lg:flex">
+              <div className="flex items-center rounded border border-gray-200 px-3 py-1.5">
                 <input
                   type="text"
                   placeholder="সার্চ করুন..."
@@ -68,7 +68,7 @@ export default function Navbar() {
               </div>
               <Link
                 href="/login"
-                className="rounded-full bg-brand-green px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-green-dark"
+                className="rounded bg-brand-green px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-green-dark"
               >
                 লগইন / রেজিস্ট্রেশন
               </Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
             {/* Mobile toggle */}
             <button
               onClick={() => setIsOpen((prev) => !prev)}
-              className="ml-auto p-2 text-gray-700 md:hidden"
+              className="ml-auto p-2 text-gray-700 lg:hidden"
               aria-label="মেনু খুলুন"
             >
               {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -92,7 +92,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                  className="text-sm rounded-lg px-3 py-2  font-medium text-gray-700 hover:bg-gray-50"
                 >
                   {link.label}
                 </Link>
