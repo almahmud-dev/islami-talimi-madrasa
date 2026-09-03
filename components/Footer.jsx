@@ -12,20 +12,38 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { footerLinks, contactInfo } from "@/helper/data";
 import logo from "../public/images/logo.png"; 
 
-const paymentMethods = [
-  "VISA",
-  "Mastercard",
-  "AMEX",
-  "bKash",
-  "Nagad",
-  "Rocket",
-  "Upay",
-  "DBBL Nexus",
-  "iKash",
-  "Sure Cash",
-  "OK Wallet",
-  "Bank Q",
-];
+import visaImg from "@/../public/images/paymentLogos/visaLogo.png";
+import mastercardImg from "@/../public/images/paymentLogos/masterLogo.png";
+import americanImg from "@/../public/images/paymentLogos/americalLogo.png";
+import bracImg from "@/../public/images/paymentLogos/bracLogo.png";
+import dutchImg from "@/../public/images/paymentLogos/dutchLogo.png";
+import cityImg from "@/../public/images/paymentLogos/cityLogo.png";
+import islamiImg from "@/../public/images/paymentLogos/islamiLogo.png";
+import abImg from "@/../public/images/paymentLogos/abLogo.png";
+import qcashImg from "@/../public/images/paymentLogos/qcashLogo.png";
+import fastImg from "@/../public/images/paymentLogos/fastLogo.png";
+import bkashImg from "@/../public/images/paymentLogos/bkashLogo.png";
+import rocketImg from "@/../public/images/paymentLogos/rocketLogo.png";
+import myImg from "@/../public/images/paymentLogos/myLogo.jpg";
+import upayImg from "@/../public/images/paymentLogos/upayLogo.webp";
+
+
+ const paymentLogos = [
+    { name: "Visa", img: visaImg },
+    { name: "Mastercard", img: mastercardImg },
+    { name: "American Express", img: americanImg },
+    { name: "Brac", img: bracImg },
+    { name: "Dutch", img: dutchImg },
+    { name: "City", img: cityImg },
+    { name: "Islami", img: islamiImg },
+    { name: "AB", img: abImg },
+    { name: "Qcash", img: qcashImg },
+    { name: "Fast", img: fastImg },
+    { name: "Bkash", img: bkashImg },
+    { name: "Rocket", img: rocketImg },
+    { name: "My", img: myImg },
+    { name: "Upay", img: upayImg },
+  ];
 
 export default function Footer() {
   return (
@@ -149,15 +167,10 @@ export default function Footer() {
       <div className="border-t border-white/10 py-5">
         <Container className="flex flex-wrap items-center gap-3">
           <span className="text-xs font-medium text-white/60">Pay With</span>
-          {paymentMethods.map((method) => (
-            <span
-              key={method}
-              className="flex h-8 items-center rounded bg-white px-2 text-[10px] font-bold text-gray-800"
-            >
-              {method}
-            </span>
+          {paymentLogos .map((method) => (
+           <Image key={method} src={method.img} alt={method} className="w-10 aspect-video" />
           ))}
-          <span className="ml-auto text-[10px] text-white/50">
+          <span className=" text-[10px] text-white/50">
             Powered by SSLCommerz
           </span>
         </Container>
