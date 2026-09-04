@@ -1,3 +1,4 @@
+import JelliyScroll from "@/components/JelliyScroll";
 import "./globals.css";
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function RootLayout({ children, modal }) {
   return (
     <html lang="bn">
       <body suppressHydrationWarning>
+        <JelliyScroll />
         {children}
         {modal}
       </body>
