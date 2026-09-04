@@ -5,6 +5,7 @@ import Link from "next/link";
 import Container from "./ui/Container";
 import { FaArrowRight, FaPlay } from "react-icons/fa";
 import { videoReports } from "@/helper/data";
+import Image from "next/image";
 
 export default function VideoReports() {
   const [showAll, setShowAll] = useState(false);
@@ -26,7 +27,7 @@ export default function VideoReports() {
               className="group block"
             >
               <div className="relative overflow-hidden rounded-xl">
-                <img
+                <Image
                   src={video.thumbnail}
                   alt={video.title}
                   width={400}
