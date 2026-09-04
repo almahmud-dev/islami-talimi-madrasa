@@ -61,7 +61,7 @@ export default function IntroSection() {
             {skillBadges.map((badge) => (
               <span
                 key={badge}
-                className=" bg-gray-900 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-white"
+                className=" bg-gray-900 px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-white rounded-md"
               >
                 {badge}
               </span>

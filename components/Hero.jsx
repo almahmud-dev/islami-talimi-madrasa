@@ -63,13 +63,13 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/courses"
-              className="rounded-full bg-brand-green px-7 py-3.5 text-sm font-semibold text-white transition-all hover:bg-brand-green-dark hover:scale-105 shadow-lg"
+              className="rounded-lg bg-brand-green px-8.5 py-3.5 text-sm font-semibold text-white transition-all hover:bg-brand-green-dark hover:scale-105 shadow-lg"
             >
               কোর্স দেখুন
             </Link>
             <Link
               href="/admission"
-              className="rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+              className="rounded-lg border border-white/30 px-8.5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               ভর্তি হোন
             </Link>
