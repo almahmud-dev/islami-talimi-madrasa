@@ -24,6 +24,7 @@ export default function Gallery() {
                 src={img.src}
                 alt={img.alt}
                 fill
+                loading="lazy"
                 sizes={index === 0 ? "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 50vw" : "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 25vw"}
                 className="object-cover transition duration-500 group-hover:scale-110"
               />

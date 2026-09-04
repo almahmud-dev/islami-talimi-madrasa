@@ -31,8 +31,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 2,
@@ -41,8 +40,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 3,
@@ -51,8 +49,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 4,
@@ -61,8 +58,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 5,
@@ -71,8 +67,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 6,
@@ -81,8 +76,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 7,
@@ -91,8 +85,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
   {
     id: 8,
@@ -101,8 +94,7 @@ const courses = [
     batch: "ব্যাচ ১",
     seat: "৪৬ সিট বাকি",
     duration: "১০ দিন বাকি",
-    description:
-      "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
+    description: "বাংলায় কোরআন শিখুন, নির্ভুল ভাবে এবং সবচেয়ে সহজ উপায়ে",
   },
 ];
 
@@ -197,6 +189,7 @@ const CourseSection = () => {
                   src={course.image}
                   alt={course.title}
                   fill
+                  loading="lazy"
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 25vw"
                 />
@@ -226,7 +219,7 @@ const CourseSection = () => {
                   {course.description}
                 </h3>
 
-                 <button
+                <button
                   type="button"
                   className="w-full flex items-center justify-center gap-2 rounded-lg py-2.5 text-[16px] font-medium text-gray-700 bg-gray-200 border border-gray-200 transition-all duration-300 hover:bg-emerald-500 hover:border-emerald-500 hover:text-white"
                 >
