@@ -50,12 +50,12 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <Container className="relative z-40 py-16 sm:py-20  w-full">
+      <Container className="relative z-40 py-16 sm:py-20  2xl:py-40 w-full">
         <div className="max-w-xl text-white">
           <p className="mb-3 text-sm sm:text-base font-medium text-gray-200">
             ইসলামিক শিক্ষার নতুন দিগন্তে আপনাকে স্বাগতম
           </p>
-          <h1 className="text-3xl font-bold leading-snug sm:text-4xl lg:text-5xl">
+          <h1 className="text-4xl font-bold leading-snug sm:text-4xl lg:text-5xl">
             এখানেই শুরু হোক <br />
             আপনার আখিরাতের <br />
             সফলতার নূরানী যাত্রা
