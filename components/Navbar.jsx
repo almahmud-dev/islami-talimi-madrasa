@@ -7,7 +7,7 @@ export default function Navbar() {
       {/* Top identity bar */}
       <TopHeader />
       {/* Main nav row */}
-      <div className="sticky top-0 z-50 border-b border-gray-100">
+      <div className="lg:sticky top-0 z-50 border-b border-gray-100">
         <NavMenu />
       </div>
     </>
