@@ -10,6 +10,7 @@ import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import { courses } from "@/helper/data";
 import FreeCourseSection from "@/components/FreeCourseSection";
+import FloatingContact from "@/components/FloatingContact";
 
 export default function HomePage() {
   return (
@@ -25,6 +26,7 @@ export default function HomePage() {
         <VideoReports />
         <Gallery />
         <FreeCourseSection/>
+        <FloatingContact />
       </main>
       <Footer />
     </>
