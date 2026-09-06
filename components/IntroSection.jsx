@@ -12,34 +12,28 @@ const skillBadges = [
   "BUSINESS SKILLS",
 ];
 
-const learningModes = [
-  "অনলাইন শিক্ষা",
-  "অফলাইন শিক্ষা",
-  "দ্বীনি প্রশিক্ষণ",
-];
+const learningModes = ["অনলাইন শিক্ষা", "অফলাইন শিক্ষা", "দ্বীনি প্রশিক্ষণ"];
 
 export default function IntroSection() {
   return (
-    <section className="">
-      <Container className="grid items-center gap-16 lg:grid-cols-3">
-        {/* Left: lanterns illustration */}
-        <div className="order-2 hidden lg:flex justify-center lg:order-1 ">
+    <section>
+      <Container className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+        {/* Left: lantern illustration - mobile e chotto size, lg e boro */}
+        <div className="flex justify-center lg:w-1/3 lg:justify-start">
           <Image
             src={lantern}
             alt="ইসলামিক লণ্ঠন ইলাস্ট্রেশন"
-            width={480}
-            height={360}
-            className="w-full max-w-md"
+            className="h-auto w-44 sm:w-56 md:w-64 lg:w-full lg:max-w-md"
           />
         </div>
 
         {/* Right: text content */}
-        <div className="order-1 lg:order-2 col-span-2 py-14 sm:py-20">
+        <div className="lg:w-2/3">
           <h2 className="text-2xl font-bold text-brand-green sm:text-3xl">
             ইছলাহ তালিম ক্যাডেট মাদ্রাসা
           </h2>
 
-          <hr />
+          <hr className="mt-3" />
 
           <p className="mt-4 leading-relaxed text-gray-600">
             আমাদের মাদ্রাসা বাংলাদেশের একটি আধুনিক ইসলামিক শিক্ষা প্রতিষ্ঠান,
@@ -61,7 +55,7 @@ export default function IntroSection() {
             {skillBadges.map((badge) => (
               <span
                 key={badge}
-                className=" bg-gray-900 px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-white rounded-md"
+                className="rounded-md bg-gray-900 px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-white"
               >
                 {badge}
               </span>
