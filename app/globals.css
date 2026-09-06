@@ -1,19 +1,9 @@
 @import "tailwindcss";
 
-/* Kalpurush - Bangla font. Kalpurush Google Fonts e nai, tai local file use kora hocche.
-   Tumi Kalpurush.ttf file ta /public/fonts/ folder e rekho. */
-@font-face {
-  font-family: "Kalpurush";
-  src: url("/fonts/Kalpurush.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @theme inline {
 
   --breakpoint-xs:359px;
-  --font-kalpurush: "Kalpurush", sans-serif;
+  --font-kalpurush: "Noto Sans Bengali", "Hind Siliguri", "Kalpurush", sans-serif;
   --color-brand-green: #0e7a3e;
   --color-brand-green-dark: #0a5c2e;
   --color-brand-red: #b91c1c;
@@ -58,6 +48,48 @@ body {
   background-color: rgb(255 255 255 / 100%);
 }
 
+/* Custom review marquee. Each column owns its own animation, so hovering one
+   column pauses only that column while the other columns keep moving. */
+.review-track {
+  animation: review-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.review-track--reverse {
+  animation-direction: reverse;
+}
+
+.review-track--horizontal {
+  animation-duration: 42s;
+}
+
+.review-column:hover .review-track,
+.review-column:focus-within .review-track {
+  animation-play-state: paused;
+}
+
+@keyframes review-scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes review-scroll-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.review-track--horizontal {
+  animation-name: review-scroll-horizontal;
+}
+
 @keyframes video-play-pulse {
   0%,
   100% {
@@ -83,7 +115,8 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .video-play-button,
   .video-play-button::before,
-  .video-play-button::after {
+  .video-play-button::after,
+  .review-track {
     animation: none;
   }
 }
