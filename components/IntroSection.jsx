@@ -63,11 +63,11 @@ export default function IntroSection() {
           </div>
 
           {/* Learning modes */}
-          <div className="mt-6 flex flex-wrap gap-6">
+          <div className="mt-6 flex justify-between w-full gap-2 sm:gap-6">
             {learningModes.map((mode) => (
               <div key={mode} className="flex items-center gap-2">
                 <FaMosque className="text-brand-green" size={18} />
-                <span className="text-sm font-medium text-gray-700">
+                <span className="text-[10px] xs:text-xs sm:text-sm font-medium text-gray-700">
                   {mode}
                 </span>
               </div>
