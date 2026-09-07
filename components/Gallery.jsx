@@ -25,7 +25,11 @@ export default function Gallery() {
                 alt={img.alt}
                 fill
                 loading="lazy"
-                sizes={index === 0 ? "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 50vw" : "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 25vw"}
+                sizes={
+                  index === 0
+                    ? "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 50vw"
+                    : "(max-width: 639px) 100vw, (max-width: 767px) 50vw, 25vw"
+                }
                 className="object-cover transition duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

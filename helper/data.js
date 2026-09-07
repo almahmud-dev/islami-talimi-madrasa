@@ -152,12 +152,14 @@ export const whyChooseUs = [
   {
     id: "why-3",
     title: "নিরাপদ থাকার ব্যবস্থা",
-    description: "শিক্ষার্থীদের জন্য নিরাপদ ও পরিচ্ছন্ন আবাসিক ব্যবস্থা রয়েছে।",
+    description:
+      "শিক্ষার্থীদের জন্য নিরাপদ ও পরিচ্ছন্ন আবাসিক ব্যবস্থা রয়েছে।",
   },
   {
     id: "why-4",
     title: "নৈতিক চরিত্র গঠন",
-    description: "দ্বীনি শিক্ষার পাশাপাশি নৈতিক চরিত্র গঠনে বিশেষ গুরুত্ব দেওয়া হয়।",
+    description:
+      "দ্বীনি শিক্ষার পাশাপাশি নৈতিক চরিত্র গঠনে বিশেষ গুরুত্ব দেওয়া হয়।",
   },
   {
     id: "why-5",
@@ -167,7 +169,8 @@ export const whyChooseUs = [
   {
     id: "why-6",
     title: "সুশৃঙ্খল পরিবেশ",
-    description: "শিক্ষার্থীদের জন্য শৃঙ্খলাবদ্ধ ও অনুকূল শিক্ষা পরিবেশ নিশ্চিত করা হয়।",
+    description:
+      "শিক্ষার্থীদের জন্য শৃঙ্খলাবদ্ধ ও অনুকূল শিক্ষা পরিবেশ নিশ্চিত করা হয়।",
   },
   {
     id: "why-7",
@@ -269,20 +272,54 @@ export const testimonials = [
   },
 ];
 
-
 // গ্যালারী - ছবি গ্রিড
 export const galleryImages = [
-  { id: "gallery-1", src: "https://www.islamicmissionschool.com/wp-content/uploads/2023/11/IMG_20200203_123239.jpg", alt: "কম্পিউটার ল্যাব" },
-  { id: "gallery-2", src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=85", alt: "সমাবেশ" },
-  { id: "gallery-3", src: "https://asset.news24bd.tv/public/news_images/2023/02/01/1675221504-018e2ac109c69e0fad5247c608fa9ac3.jpg", alt: "ছাত্রছাত্রী" },
-  { id: "gallery-4", src: "https://dntakhsisimadrasah.com/backend_assets/gallery_image/1733573594.jpg", alt: "শিক্ষা কার্যক্রম" },
-  { id: "gallery-5", src: "https://www.risingbd.com/media/imgAll/2025October/madrasa-2510161243.jpg", alt: "মাদ্রাসা প্রাঙ্গণ" },
-  { id: "gallery-6", src: "https://ecdn.dhakatribune.net/contents/cache/images/1200x630x1xxxxx1x694528/uploads/dten/2017/07/madrasa.jpg", alt: "শিক্ষক ও শিক্ষার্থী" },
-  { id: "gallery-7", src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=85", alt: "অনুষ্ঠান" },
-  { id: "gallery-8", src: "https://cdn.moumachi.com.bd/listings/2019-04/11250/images/original/202311-7511_darunnazat-siddikia-kamil-madrasah-classroom.png", alt: "মাদ্রাসা ভবন" },
-  { id: "gallery-9", src: "https://www.risingbd.com/media/imgAll/2023November/Madrasah-2311240803.jpg", alt: "শ্রেণিকক্ষের পাঠদান" },
+  {
+    id: "gallery-1",
+    src: "/images/gallery/computer-lab.png",
+    alt: "কম্পিউটার ল্যাব",
+  },
+  {
+    id: "gallery-2",
+    src: "/images/gallery/meeting.png",
+    alt: "সমাবেশ",
+  },
+  {
+    id: "gallery-3",
+    src: "/images/gallery/students.png",
+    alt: "ছাত্রছাত্রী",
+  },
+  {
+    id: "gallery-4",
+    src: "/images/gallery/events.png",
+    alt: "শিক্ষা কার্যক্রম",
+  },
+  {
+    id: "gallery-5",
+    src: "/images/gallery/campus.png",
+    alt: "মাদ্রাসা প্রাঙ্গণ",
+  },
+  {
+    id: "gallery-6",
+    src: "/images/gallery/teachers-students.png",
+    alt: "শিক্ষক ও শিক্ষার্থী",
+  },
+  {
+    id: "gallery-7",
+    src: "/images/gallery/assembly.png",
+    alt: "অনুষ্ঠান",
+  },
+  {
+    id: "gallery-8",
+    src: "/images/gallery/madrasa-building.png",
+    alt: "মাদ্রাসা ভবন",
+  },
+  {
+    id: "gallery-9",
+    src: "/images/gallery/examroom.png",
+    alt: "শ্রেণিকক্ষের পাঠদান",
+  },
 ];
-
 
 // ফুটার - লিংক ও তথ্য
 export const footerLinks = {
