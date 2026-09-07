@@ -13,6 +13,7 @@ import TeacherSection from "@/components/TeacherSection";
 import OurCampusSection from "@/components/OurCampusSection";
 import DepartmentsSectionTwo from "@/components/DepartmentsSectionTwo";
 import NoticeBar from "@/components/NoticeBar";
+import PrincipalMessage from "@/components/PrincipalMessage";
 
 export default function HomePage() {
   return (
@@ -28,6 +29,9 @@ export default function HomePage() {
 
         {/* About */}
         <IntroSection />
+
+        {/* Principal Message */}
+        <PrincipalMessage />
 
         {/* Academics */}
         <CoursesSection title="আমাদের কোর্সসমূহ" courses={courses} />
