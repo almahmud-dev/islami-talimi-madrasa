@@ -4,9 +4,9 @@ import { navLinks } from "@/helper/data";
 
 export default function DesktopNav() {
   return (
-    <div className="hidden items-center justify-center gap-40 py-2.5 lg:flex w-full">
+    <div className="hidden items-center justify-center gap-45 py-2.5 lg:flex w-full">
       {/* Nav links */}
-      <nav className="flex items-center gap-6">
+      <nav className="flex items-center gap-11">
         {navLinks.map((link) => (
           <Link
             key={link.href}
@@ -19,12 +19,12 @@ export default function DesktopNav() {
       </nav>
 
       {/* Search + CTA */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-15">
         <div className="flex items-center rounded border border-gray-200 px-3 py-1.5">
           <input
             type="text"
             placeholder="সার্চ করুন..."
-            className="w-32 bg-transparent text-sm outline-none placeholder:text-gray-400 lg:w-40"
+            className="w-32 bg-transparent text-sm outline-none placeholder:text-black lg:w-40"
           />
           <FiSearch className="text-gray-400" size={16} />
         </div>
