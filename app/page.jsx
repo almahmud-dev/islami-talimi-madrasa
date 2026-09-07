@@ -12,6 +12,7 @@ import StorySection from "@/components/StorySection";
 import TeacherSection from "@/components/TeacherSection";
 import OurCampusSection from "@/components/OurCampusSection";
 import DepartmentsSectionTwo from "@/components/DepartmentsSectionTwo";
+import NoticeBar from "@/components/NoticeBar";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,9 @@ export default function HomePage() {
       <Navbar />
 
       <main>
+        {/* Notice bar */}
+        <NoticeBar />
+
         {/* Hero */}
         <Hero />
 

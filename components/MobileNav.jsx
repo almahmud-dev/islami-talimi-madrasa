@@ -63,16 +63,21 @@ export default function MobileNav() {
                   animate={{ x: 0 }}
                   exit={{ x: "100%" }}
                   transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
-                  className="fixed right-0 top-0 z-[999] flex h-full w-[80%] max-w-xs flex-col bg-white p-5 shadow-2xl"
+                  className="fixed right-0 top-0 z-999 flex h-full w-[80%] max-w-xs flex-col bg-white p-4 sm:p-5 shadow-2xl"
                 >
                   <div className="flex items-center justify-between border-b border-gray-100 pb-3">
-                    <Image
-                      src={logo}
-                      alt="লোগো"
-                      width={36}
-                      height={36}
-                      className="h-9 w-9 rounded-full border border-gray-200 object-cover"
-                    />
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src={logo}
+                        alt="লোগো"
+                        width={36}
+                        height={36}
+                        className="h-9 w-9 rounded-full border border-gray-200 object-cover"
+                      />{" "}
+                      <h1 className="text-xs xs:text-sm sm:text-base font-extrabold text-brand-green ">
+                        ইছলাহুত তালিম ক্যাডেট মাদ্রাসা
+                      </h1>
+                    </div>
                     <button
                       onClick={() => setIsOpen(false)}
                       className="rounded-lg p-2 text-gray-700 transition-colors hover:bg-gray-100"
@@ -115,7 +120,7 @@ export default function MobileNav() {
               </>
             )}
           </AnimatePresence>,
-          document.body
+          document.body,
         )}
     </div>
   );
