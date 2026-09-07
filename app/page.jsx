@@ -4,11 +4,9 @@ import IntroSection from "@/components/IntroSection";
 import CoursesSection from "@/components/CoursesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
-import VideoReports from "@/components/VideoReports";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import { courses } from "@/helper/data";
-import FreeCourseSection from "@/components/FreeCourseSection";
 import FloatingContact from "@/components/FloatingContact";
 import StorySection from "@/components/StorySection";
 import TeacherSection from "@/components/TeacherSection";
@@ -19,21 +17,41 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
+
       <main>
+        {/* Hero */}
         <Hero />
+
+        {/* About */}
         <IntroSection />
+
+        {/* Academics */}
         <CoursesSection title="আমাদের কোর্সসমূহ" courses={courses} />
-        <WhyChooseUs />
-        <StorySection />
-        <TeacherSection />
-        <OurCampusSection />
+
         <DepartmentsSectionTwo />
+
+        {/* Why Choose Us */}
+        <WhyChooseUs />
+
+        {/* Teachers */}
+        <TeacherSection />
+
+        {/* Campus */}
+        <OurCampusSection />
+
+        {/* Stories */}
+        <StorySection />
+
+        {/* Alumni / Testimonials */}
         <Testimonials />
-        {/* <VideoReports /> */}
-        {/* <Gallery /> */}
-        {/* <FreeCourseSection/> */}
+
+        {/* Gallery */}
+        <Gallery />
+
+        {/* Floating Contact */}
         <FloatingContact />
       </main>
+
       <Footer />
     </>
   );
