@@ -14,7 +14,7 @@ const departments = [
     description:
       "তাজবিদ, মাখরাজ ও সঠিক উচ্চারণের মাধ্যমে কুরআন মুখস্থ ও বোঝার জন্য সুপরিকল্পিত শিক্ষা।",
     image:
-      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments1.png",
     icon: FaBookOpen,
     number: "০১",
   },
@@ -24,7 +24,7 @@ const departments = [
     description:
       "ফিকহ, হাদিস, তাফসির ও আরবি ভাষার সমন্বিত পাঠক্রমে জ্ঞান, আমল ও চরিত্র গঠনের সুযোগ।",
     image:
-      "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments2.png",
     icon: FaMosque,
     number: "০২",
   },
@@ -34,7 +34,7 @@ const departments = [
     description:
       "ইসলামি মূল্যবোধের পাশাপাশি আধুনিক বিষয়ভিত্তিক শিক্ষায় ভবিষ্যতের জন্য আত্মবিশ্বাসী করে তোলা।",
     image:
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments3.png",
     icon: FaGraduationCap,
     number: "০৩",
   },
@@ -44,7 +44,7 @@ const departments = [
     description:
       "কথোপকথন, ব্যাকরণ ও পাঠাভ্যাসের মাধ্যমে আরবি ভাষা শেখার সহজ ও কার্যকর পদ্ধতি।",
     image:
-      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments4.png",
     icon: FaBookOpen,
     number: "০৪",
   },
@@ -54,7 +54,7 @@ const departments = [
     description:
       "ফিকহ, হাদিস, তাফসির ও ইসলামি জ্ঞানের গুরুত্বপূর্ণ বিষয়গুলো গভীরভাবে শেখার সুযোগ।",
     image:
-      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments5.png",
     icon: FaMosque,
     number: "০৫",
   },
@@ -64,7 +64,7 @@ const departments = [
     description:
       "শৃঙ্খলা, নেতৃত্ব, আত্মবিশ্বাস ও দায়িত্ববোধ গঠনের জন্য নিয়মিত বিশেষ প্রশিক্ষণ।",
     image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments6.png",
     icon: FaGraduationCap,
     number: "০৬",
   },
@@ -74,7 +74,7 @@ const departments = [
     description:
       "সুন্দর আচরণ, মানবিকতা, শিষ্টাচার ও দায়িত্বশীল জীবনযাপনের মূল্যবোধ গড়ে তোলা।",
     image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments7.png",
     icon: FaMosque,
     number: "০৭",
   },
@@ -84,7 +84,7 @@ const departments = [
     description:
       "ডিজিটাল দক্ষতা, প্রযুক্তি ব্যবহার ও ভবিষ্যৎ কর্মজীবনের প্রয়োজনীয় ভিত্তি তৈরি করা।",
     image:
-      "https://images.unsplash.com/photo-1603969409447-ba86143a03f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGljdCUyMGFuZCUyMGNvbXB1dGVyfGVufDB8fDB8fHww",
+      "/images/departments/departments8.png",
     icon: FaGraduationCap,
     number: "০৮",
   },
@@ -94,7 +94,7 @@ const departments = [
     description:
       "খেলাধুলা, বক্তৃতা, বিতর্ক ও সৃজনশীল কার্যক্রমের মাধ্যমে আত্মবিশ্বাস ও প্রতিভার বিকাশ।",
     image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85",
+      "/images/departments/departments9.png",
     icon: FaBookOpen,
     number: "০৯",
   },
