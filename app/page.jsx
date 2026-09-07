@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import IntroSection from "@/components/IntroSection";
-import CoursesSection from "@/components/CoursesSection";
+// import CoursesSection from "@/components/CoursesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
@@ -30,7 +30,7 @@ export default function HomePage() {
         <IntroSection />
 
         {/* Academics */}
-        <CoursesSection title="আমাদের কোর্সসমূহ" courses={courses} />
+        {/* <CoursesSection title="আমাদের কোর্সসমূহ" courses={courses} /> */}
 
         <DepartmentsSectionTwo />
 

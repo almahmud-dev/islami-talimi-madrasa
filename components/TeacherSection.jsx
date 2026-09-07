@@ -8,7 +8,7 @@ const alumni = [
     role: "চিকিৎসক ও গবেষক",
     year: "২০১৫",
     image:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&q=85",
+      "images/teachers/teachers1.png",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const alumni = [
     role: "ইসলামি গবেষক ও লেখক",
     year: "২০১৮",
     image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=85",
+      "images/teachers/teachers2.png",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const alumni = [
     role: "ব্যবসায়িক নির্বাহী ও উদ্যোক্তা",
     year: "২০১২",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=85",
+      "images/teachers/teachers3.png",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const alumni = [
     role: "সিভিল ইঞ্জিনিয়ার ও সমাজকর্মী",
     year: "২০১৬",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85",
+      "images/teachers/teachers4.png",
   },
 ];
 
