@@ -4,7 +4,7 @@ import { navLinks } from "@/helper/data";
 
 export default function DesktopNav() {
   return (
-    <div className="hidden items-center justify-center gap-10 py-2.5 lg:flex w-full">
+    <div className="hidden items-center justify-center gap-40 py-2.5 lg:flex w-full">
       {/* Nav links */}
       <nav className="flex items-center gap-6">
         {navLinks.map((link) => (
