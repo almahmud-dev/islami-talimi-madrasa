@@ -18,17 +18,8 @@ export default function IntroSection() {
   return (
     <section>
       <Container className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
-        {/* Left: lantern illustration - mobile e chotto size, lg e boro */}
-        <div className="flex justify-center lg:w-1/3 lg:justify-start">
-          <Image
-            src={lantern}
-            alt="ইসলামিক লণ্ঠন ইলাস্ট্রেশন"
-            className="h-auto w-44 sm:w-56 md:w-64 lg:w-full lg:max-w-md"
-          />
-        </div>
-
-        {/* Right: text content */}
-        <div className="lg:w-2/3">
+        {/* Text content */}
+        <div className="order-2 lg:order-1 lg:w-2/3">
           <h2 className="text-2xl font-bold text-brand-green sm:text-3xl">
             ইছলাহ তালিম ক্যাডেট মাদ্রাসা
           </h2>
@@ -63,16 +54,26 @@ export default function IntroSection() {
           </div>
 
           {/* Learning modes */}
-          <div className="mt-6 flex justify-between w-full gap-2 sm:gap-6">
+          <div className="mt-6 flex w-full justify-between gap-2 sm:gap-6">
             {learningModes.map((mode) => (
               <div key={mode} className="flex items-center gap-2">
                 <FaMosque className="text-brand-green" size={18} />
-                <span className="text-[10px] xs:text-xs sm:text-sm font-medium text-gray-700">
+
+                <span className="text-[10px] font-medium text-gray-700 xs:text-xs sm:text-sm">
                   {mode}
                 </span>
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Lantern illustration */}
+        <div className="order-1 flex justify-center lg:order-2 lg:w-1/3 lg:justify-end">
+          <Image
+            src={lantern}
+            alt="ইসলামিক লণ্ঠন ইলাস্ট্রেশন"
+            className="h-auto w-44 sm:w-56 md:w-64 lg:w-full lg:max-w-md"
+          />
         </div>
       </Container>
     </section>
