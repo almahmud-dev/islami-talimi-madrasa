@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^13.2.0",
-    "jelliy": "^0.1.10",
+    "jelliy": "^0.1.11",
     "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
